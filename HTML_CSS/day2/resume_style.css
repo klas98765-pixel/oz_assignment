@@ -1,0 +1,159 @@
+
+/* 1. 전체 페이지 설정 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eef2f7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    color: #333333;
+    line-height: 1.7;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. 제목 디자인 */
+h1 {
+    font-size: 32px;
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 21px;
+    color: #234e70;
+    margin-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dce5ef;
+}
+
+/* 3. 자기소개 및 목록 */
+p {
+    font-size: 15px;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 25px 0;
+}
+
+/* 4. 프로필 사진 */
+img {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 3px solid #e5eaf0;
+}
+
+/* 5. 경력 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: none;
+}
+
+th, td {
+    border: 1px solid #dce3eb;
+    padding: 13px;
+    text-align: center;
+}
+
+th {
+    background-color: #234e70;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f8fafc;
+}
+
+/* 6. GitHub 링크 */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 7. 메일 입력 폼 */
+form {
+    background-color: #f8fafc;
+    padding: 25px;
+    border: 1px solid #e1e7ef;
+    border-radius: 10px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #93c5fd;
+}
+
+button {
+    background-color: #234e70;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #16344c;
+}
+
+/* 8. 반응형 디자인 */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    th, td {
+        padding: 7px;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+}
