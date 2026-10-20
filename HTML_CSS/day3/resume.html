@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume_style.css">
+    <title>김민준 이력서</title>
+</head>
+
+    <h2>5. GitHub</h2>
+    <p>
+        <a href="https://github.com/klas98765-pixel/oz-git-study" target="_blank">
+            김민준 GitHub 저장소 바로가기
+        </a>
+    </p>
+
+    <!-- 상단 내비게이션 메뉴 -->
+    <nav class="navbar">
+        <a href="#about">자기소개</a>
+        <a href="#education">학력</a>
+        <a href="#interests">관심 분야</a>
+        <a href="#experience">경력</a>
+        <a href="#contact">문의하기</a>
+    </nav>
+
+<body>
+    <h1>김민준 이력서</h1>
+   <img src="../profile.png" alt="김민준 프로필 사진" width="180">
+    <hr>
+
+    <h2 id="about">1. 자기소개</h2>
+    <p>안녕하세요. 의료 인공지능 분야에 관심을 가지고 공부하고 있는 김민준입니다.</p>
+
+    <h2 id="education">2. 학력</h2>
+    <ul>
+        <li>의공학과 학사 졸업</li>
+    </ul>
+
+    <h2 id="interests">3. 관심 분야</h2>
+    <ol>
+        <li>의료 인공지능</li>
+        <li>Python 프로그래밍</li>
+        <li>머신러닝 및 딥러닝</li>
+    </ol>
+
+    <hr>
+
+    <hr>
+    <h2 id="contact">6. 문의 메일 보내기</h2>
+    <form action="mailto:your-email@example.com"
+          method="post" enctype="text/plain">
+
+        <p>
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="이름" required>
+        </p>
+
+        <p>
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="이메일" required>
+        </p>
+
+        <p>
+            <label for="message">문의 내용:</label>
+            <textarea id="message" name="문의내용"
+                      rows="5" cols="40" required></textarea>
+        </p>
+
+        <button type="submit">메일 보내기</button>
+    </form>
+
+</body>
+    <h2 id="experience">4. 학력 및 활동 이력</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>기관 및 활동</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>학력</td>
+                <td>대학교</td>
+                <td>의공학과 학사 졸업</td>
+            </tr>
+            <tr>
+                <td>학습</td>
+                <td>AI 교육과정</td>
+                <td>Python 및 의료 인공지능 학습</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</html>
