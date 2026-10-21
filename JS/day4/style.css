@@ -1,0 +1,169 @@
+
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #f3f5fa;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* 제목 */
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+header p {
+    color: #64748b;
+}
+
+#statusText {
+    font-size: 13px;
+    color: #2563eb;
+}
+
+/* 검색창 */
+.search-box {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* 탭 버튼 */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 13px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tabs button.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* 목록 정보 */
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* 암호화폐 테이블 */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* 관심목록 별 버튼 */
+.favorite-btn {
+    border: none;
+    background: none;
+    font-size: 23px;
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+.favorite-btn.selected {
+    color: #f59e0b;
+}
+
+/* 가격 변동 표시 */
+.positive {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.negative {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* 검색 결과 없음 */
+#emptyMessage {
+    text-align: center;
+    padding: 35px;
+    color: #64748b;
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+    .container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    th, td {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+}
